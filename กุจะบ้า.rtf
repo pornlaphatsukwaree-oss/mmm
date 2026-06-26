@@ -1,215 +1,144 @@
-{\rtf1\ansi\ansicpg874\cocoartf2870
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
-{\colortbl;\red255\green255\blue255;\red20\green67\blue174;\red246\green247\blue249;\red46\green49\blue51;
-\red0\green0\blue0;\red77\green80\blue85;\red186\green6\blue115;\red162\green0\blue16;}
-{\*\expandedcolortbl;;\cssrgb\c9412\c35294\c73725;\cssrgb\c97255\c97647\c98039;\cssrgb\c23529\c25098\c26275;
-\cssrgb\c0\c0\c0;\cssrgb\c37255\c38824\c40784;\cssrgb\c78824\c15294\c52549;\cssrgb\c70196\c7843\c7059;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\deftab720
-\pard\pardeftab720\partightenfactor0
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+  </head>
+  <body>
+    <!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>Circus Arena</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #1e0b36 0%, #080214 100%);
+            min-height: 100vh;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+        .tent-stripes {
+            background: repeating-linear-gradient(45deg, #dc2626, #dc2626 30px, #ffffff 30px, #ffffff 60px);
+            border-bottom: 6px solid #f59e0b;
+        }
+    </style>
+</head>
+<body class="text-white pb-12">
 
-\f0\fs26 \cf2 \cb3 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 function\cf4 \strokec4  \strokec5 doGet\strokec4 () \{\cb1 \
-\pard\pardeftab720\partightenfactor0
-\cf4 \cb3   \cf6 \strokec6 // \uc0\u3610 \u3633 \u3591 \u3588 \u3633 \u3610 \u3650 \u3627 \u3621 \u3604 \u3652 \u3615 \u3621 \u3660 \u3594 \u3639 \u3656 \u3629  Index \u3648 \u3626 \u3617 \u3629  \u3611 \u3657 \u3629 \u3591 \u3585 \u3633 \u3609 \u3611 \u3633 \u3597 \u3627 \u3634 \u3627 \u3634 \u3652 \u3615 \u3621 \u3660 \u3652 \u3617 \u3656 \u3648 \u3592 \u3629 \cf4 \cb1 \strokec4 \
-\cb3   \cf2 \strokec2 var\cf4 \strokec4  \strokec5 htmlOutput\strokec4  = \cf7 \strokec7 HtmlService\cf4 \strokec4 .\strokec5 createHtmlOutputFromFile\strokec4 (\cf8 \strokec8 'Index'\cf4 \strokec4 );\cb1 \
-\cb3   \cb1 \
-\cb3   \strokec5 htmlOutput\strokec4 .\strokec5 setTitle\strokec4 (\cf8 \strokec8 'Circus Point Arena'\cf4 \strokec4 )\cb1 \
-\cb3             .\strokec5 setXFrameOptionsMode\strokec4 (\cf7 \strokec7 HtmlService\cf4 \strokec4 .\cf7 \strokec7 XFrameOptionsMode\cf4 \strokec4 .\cf7 \strokec7 ALLOWALL\cf4 \strokec4 )\cb1 \
-\cb3             .\strokec5 addMetaTag\strokec4 (\cf8 \strokec8 'viewport'\cf4 \strokec4 , \cf8 \strokec8 'width=device-width, initial-scale=1.0'\cf4 \strokec4 );\cb1 \
-\cb3             \cb1 \
-\cb3   \cf2 \strokec2 return\cf4 \strokec4  \strokec5 htmlOutput\strokec4 ;\cb1 \
-\cb3 \}\cb1 \
-<!DOCTYPE html>\
-<html lang="th">\
-<head>\
-    <meta charset="UTF-8">\
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
-    <title>Circus Point Arena - \uc0\u3619 \u3632 \u3610 \u3610 \u3626 \u3632 \u3626 \u3617 \u3649 \u3605 \u3657 \u3617 \u3621 \u3632 \u3588 \u3619 \u3626 \u3633 \u3605 \u3623 \u3660 </title>\
-    <script src="https://cdn.tailwindcss.com"></script>\
-    <link rel="preconnect" href="https://fonts.googleapis.com">\
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\
-    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300;400;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">\
-    \
-    <style>\
-        body \{\
-            font-family: 'Mitr', sans-serif;\
-            background: radial-gradient(circle, #2b1055, #100520);\
-            min-height: 100vh;\
-        \}\
-        .circus-title \{\
-            font-family: 'Playfair Display', 'Mitr', serif;\
-            text-shadow: 3px 3px 0px #d62828, 6px 6px 0px #003049;\
-        \}\
-        /* \uc0\u3621 \u3634 \u3618 \u3648 \u3605 \u3655 \u3609 \u3607 \u3660 \u3621 \u3632 \u3588 \u3619 \u3626 \u3633 \u3605 \u3623 \u3660 \u3626 \u3637 \u3649 \u3604 \u3591 \u3586 \u3634 \u3623  */\
-        .circus-tent-header \{\
-            background: repeating-linear-gradient(\
-                45deg,\
-                #e63946,\
-                #e63946 30px,\
-                #ffffff 30px,\
-                #ffffff 60px\
-            );\
-            border-bottom: 8px solid #fcbf49;\
-        \}\
-        .gold-glow \{\
-            box-shadow: 0 0 25px #fcbf49;\
-            animation: pulse 2s infinite;\
-        \}\
-        @keyframes pulse \{\
-            0% \{ transform: scale(1); \}\
-            50% \{ transform: scale(1.02); \}\
-            100% \{ transform: scale(1); \}\
-        \}\
-    </style>\
-</head>\
-<body class="text-white pb-12">\
-\
-    <div class="circus-tent-header w-full py-6 text-center shadow-2xl relative overflow-hidden">\
-        <div class="bg-black/40 absolute inset-0 backdrop-blur-[1px]"></div>\
-        <div class="relative z-10">\
-            <h1 class="circus-title text-5xl md:text-6xl font-bold text-[#fcbf49] tracking-wider uppercase italic">\
-                \uc0\u55356 \u57258  CIRCUS ARENA \u55356 \u57258 \
-            </h1>\
-            <p class="text-white text-lg md:text-xl font-light mt-2 tracking-wide drop-shadow-md">\
-                \uc0\u3619 \u3632 \u3610 \u3610 \u3588 \u3635 \u3609 \u3623 \u3603 \u3588 \u3632 \u3649 \u3609 \u3609 \u3649 \u3621 \u3632 \u3592 \u3633 \u3604 \u3629 \u3633 \u3609 \u3604 \u3633 \u3610 \u3588 \u3603 \u3632 \u3621 \u3632 \u3588 \u3619 \u3626 \u3633 \u3605 \u3623 \u3660 \u3626 \u3640 \u3604 \u3617 \u3627 \u3633 \u3624 \u3592 \u3619 \u3619 \u3618 \u3660 \
-            </p>\
-        </div>\
-    </div>\
-\
-    <div class="max-w-6xl mx-auto px-4 mt-10">\
-        \
-        <div class="flex justify-end mb-6">\
-            <button onclick="resetScores()" class="bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-6 rounded-full shadow-lg transition duration-300 transform hover:scale-105 flex items-center gap-2 border-2 border-white/20">\
-                \uc0\u55357 \u56580  \u3619 \u3637 \u3648 \u3595 \u3655 \u3605 \u3588 \u3632 \u3649 \u3609 \u3609 \u3607 \u3633 \u3657 \u3591 \u3627 \u3617 \u3604 \
-            </button>\
-        </div>\
-\
-        <div id="leaderboard" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 transition-all duration-500">\
-            </div>\
-    </div>\
-\
-    <div class="text-center mt-12 text-white/40 text-sm">\
-        \uc0\u10024  \u3618 \u3636 \u3609 \u3604 \u3637 \u3605 \u3657 \u3629 \u3609 \u3619 \u3633 \u3610 \u3626 \u3641 \u3656 \u3650 \u3621 \u3585 \u3649 \u3627 \u3656 \u3591 \u3588 \u3623 \u3634 \u3617 \u3626 \u3640 \u3586 \u3649 \u3621 \u3632 \u3585 \u3634 \u3619 \u3649 \u3586 \u3656 \u3591 \u3586 \u3633 \u3609 \u3607 \u3637 \u3656 \u3618 \u3640 \u3605 \u3636 \u3608 \u3619 \u3619 \u3617  \u10024 \
-    </div>\
-\
-    <script>\
-        // \uc0\u3586 \u3657 \u3629 \u3617 \u3641 \u3621 \u3648 \u3619 \u3636 \u3656 \u3617 \u3605 \u3657 \u3609 \u3586 \u3629 \u3591 \u3607 \u3633 \u3657 \u3591  6 \u3607 \u3637 \u3617 \
-        let teams = [\
-            \{ id: 1, name: "\uc0\u3607 \u3637 \u3617 \u3626 \u3636 \u3591 \u3650 \u3605 \u3648 \u3592 \u3657 \u3634 \u3611 \u3633 \u3597 \u3597 \u3634 ", icon: "\u55358 \u56705 ", score: 0, color: "from-orange-500 to-amber-600", border: "border-orange-400" \},\
-            \{ id: 2, name: "\uc0\u3607 \u3637 \u3617 \u3594 \u3657 \u3634 \u3591 \u3609 \u3657 \u3629 \u3618 \u3585 \u3634 \u3618 \u3585 \u3619 \u3619 \u3617 ", icon: "\u55357 \u56344 ", score: 0, color: "from-blue-500 to-indigo-600", border: "border-blue-400" \},\
-            \{ id: 3, name: "\uc0\u3607 \u3637 \u3617 \u3605 \u3633 \u3623 \u3605 \u3621 \u3585 \u3650 \u3610 \u3650 \u3595 \u3656 ", icon: "\u55358 \u56609 ", score: 0, color: "from-pink-500 to-rose-600", border: "border-pink-400" \},\
-            \{ id: 4, name: "\uc0\u3607 \u3637 \u3617 \u3617 \u3634 \u3618 \u3634 \u3585 \u3621 \u3621 \u3638 \u3585 \u3621 \u3633 \u3610 ", icon: "\u55356 \u57257 ", score: 0, color: "from-purple-600 to-indigo-900", border: "border-purple-400" \},\
-            \{ id: 5, name: "\uc0\u3607 \u3637 \u3617 \u3650 \u3621 \u3604 \u3650 \u3612 \u3609 \u3648 \u3623 \u3627 \u3634 ", icon: "\u55356 \u57258 ", score: 0, color: "from-teal-500 to-emerald-600", border: "border-teal-400" \},\
-            \{ id: 6, name: "\uc0\u3607 \u3637 \u3617 \u3621 \u3636 \u3591 \u3592 \u3629 \u3617 \u3595 \u3609 ", icon: "\u55357 \u56338 ", score: 0, color: "from-yellow-500 to-amber-600", border: "border-yellow-400" \}\
-        ];\
-\
-        // \uc0\u3650 \u3627 \u3621 \u3604 \u3586 \u3657 \u3629 \u3617 \u3641 \u3621 \u3592 \u3634 \u3585  LocalStorage \u3606 \u3657 \u3634 \u3617 \u3637 \u3610 \u3633 \u3609 \u3607 \u3638 \u3585 \u3652 \u3623 \u3657 \u3648 \u3604 \u3636 \u3617 \
-        if (localStorage.getItem('circus_scores')) \{\
-            const savedScores = JSON.parse(localStorage.getItem('circus_scores'));\
-            teams.forEach(t => \{\
-                if(savedScores[t.id] !== undefined) t.score = savedScores[t.id];\
-            \});\
-        \}\
-\
-        // \uc0\u3615 \u3633 \u3591 \u3585 \u3660 \u3594 \u3633 \u3609 \u3629 \u3633 \u3611 \u3648 \u3604 \u3605 \u3649 \u3605 \u3657 \u3617 \u3588 \u3632 \u3649 \u3609 \u3609 \
-        function updateScore(teamId, amount) \{\
-            const team = teams.find(t => t.id === teamId);\
-            if (team) \{\
-                team.score = Math.max(0, team.score + amount); // \uc0\u3611 \u3657 \u3629 \u3591 \u3585 \u3633 \u3609 \u3652 \u3617 \u3656 \u3651 \u3627 \u3657 \u3588 \u3632 \u3649 \u3609 \u3609 \u3605 \u3636 \u3604 \u3621 \u3610 \
-                saveScores();\
-                renderLeaderboard();\
-            \}\
-        \}\
-\
-        // \uc0\u3615 \u3633 \u3591 \u3585 \u3660 \u3594 \u3633 \u3609 \u3619 \u3637 \u3648 \u3595 \u3655 \u3605 \u3588 \u3632 \u3649 \u3609 \u3609 \
-        function resetScores() \{\
-            if (confirm("\uc0\u3588 \u3640 \u3603 \u3649 \u3609 \u3656 \u3651 \u3592 \u3651 \u3594 \u3656 \u3652 \u3627 \u3617 \u3623 \u3656 \u3634 \u3605 \u3657 \u3629 \u3591 \u3585 \u3634 \u3619 \u3619 \u3637 \u3648 \u3595 \u3655 \u3605 \u3588 \u3632 \u3649 \u3609 \u3609 \u3586 \u3629 \u3591 \u3607 \u3640 \u3585 \u3607 \u3637 \u3617 \u3651 \u3627 \u3657 \u3648 \u3611 \u3655 \u3609  0?")) \{\
-                teams.forEach(t => t.score = 0);\
-                saveScores();\
-                renderLeaderboard();\
-            \}\
-        \}\
-\
-        // \uc0\u3615 \u3633 \u3591 \u3585 \u3660 \u3594 \u3633 \u3609 \u3610 \u3633 \u3609 \u3607 \u3638 \u3585 \u3588 \u3632 \u3649 \u3609 \u3609 \u3621 \u3591 \u3648 \u3588 \u3619 \u3639 \u3656 \u3629 \u3591 \
-        function saveScores() \{\
-            const scoreMap = \{\};\
-            teams.forEach(t => scoreMap[t.id] = t.score);\
-            localStorage.setItem('circus_scores', JSON.stringify(scoreMap));\
-        \}\
-\
-        // \uc0\u3615 \u3633 \u3591 \u3585 \u3660 \u3594 \u3633 \u3609 \u3623 \u3634 \u3604 \u3610 \u3629 \u3619 \u3660 \u3604 \u3588 \u3632 \u3649 \u3609 \u3609 \u3649 \u3621 \u3632 \u3592 \u3633 \u3604 \u3629 \u3633 \u3609 \u3604 \u3633 \u3610 \u3651 \u3627 \u3617 \u3656 \
-        function renderLeaderboard() \{\
-            const leaderboardEl = document.getElementById('leaderboard');\
-            leaderboardEl.innerHTML = '';\
-\
-            // \uc0\u3648 \u3619 \u3637 \u3618 \u3591 \u3621 \u3635 \u3604 \u3633 \u3610 \u3592 \u3634 \u3585 \u3588 \u3632 \u3649 \u3609 \u3609 \u3617 \u3634 \u3585 \u3652 \u3611 \u3609 \u3657 \u3629 \u3618 \
-            const sortedTeams = [...teams].sort((a, b) => b.score - a.score);\
-\
-            sortedTeams.forEach((team, index) => \{\
-                const isFirst = index === 0 && team.score > 0;\
-                const rankNumber = index + 1;\
-                \
-                // \uc0\u3585 \u3635 \u3627 \u3609 \u3604 \u3626 \u3633 \u3597 \u3621 \u3633 \u3585 \u3625 \u3603 \u3660 \u3648 \u3627 \u3619 \u3637 \u3618 \u3597 \u3619 \u3634 \u3591 \u3623 \u3633 \u3621 \u3605 \u3634 \u3617 \u3629 \u3633 \u3609 \u3604 \u3633 \u3610 \
-                let rankBadge = `<span class="bg-black/30 px-3 py-1 rounded-full text-sm font-bold">\uc0\u3629 \u3633 \u3609 \u3604 \u3633 \u3610  $\{rankNumber\}</span>`;\
-                if (rankNumber === 1) rankBadge = `\uc0\u55357 \u56401  <span class="bg-amber-400 text-black px-3 py-1 rounded-full text-sm font-bold">\u3612 \u3641 \u3657 \u3609 \u3635 \u3588 \u3632 \u3649 \u3609 \u3609 </span>`;\
-                if (rankNumber === 2 && team.score > 0) rankBadge = `\uc0\u55358 \u56648  <span class="bg-slate-300 text-black px-3 py-1 rounded-full text-sm font-bold">\u3629 \u3633 \u3609 \u3604 \u3633 \u3610  2</span>`;\
-                if (rankNumber === 3 && team.score > 0) rankBadge = `\uc0\u55358 \u56649  <span class="bg-amber-700 text-white px-3 py-1 rounded-full text-sm font-bold">\u3629 \u3633 \u3609 \u3604 \u3633 \u3610  3</span>`;\
-\
-                const cardHTML = `\
-                    <div class="bg-gradient-to-br $\{team.color\} rounded-3xl p-6 shadow-xl border-4 $\{team.border\} relative transition-all duration-500 transform hover:-translate-y-1 $\{isFirst ? 'gold-glow z-10' : ''\}">\
-                        \
-                        <div class="absolute top-4 right-4 flex items-center gap-1">\
-                            $\{rankBadge\}\
-                        </div>\
-\
-                        <div class="flex items-center gap-4 mt-2">\
-                            <span class="text-5xl drop-shadow-md">$\{team.icon\}</span>\
-                            <div>\
-                                <h3 class="text-xl font-bold tracking-wide text-white drop-shadow-md">$\{team.name\}</h3>\
-                                <p class="text-xs text-white/70">\uc0\u3588 \u3603 \u3632 \u3621 \u3632 \u3588 \u3619 \u3626 \u3633 \u3605 \u3623 \u3660 \u3629 \u3633 \u3624 \u3592 \u3619 \u3619 \u3618 \u3660 </p>\
-                            </div>\
-                        </div>\
-\
-                        <div class="my-6 bg-black/20 rounded-2xl py-4 text-center border border-white/10">\
-                            <span class="text-sm block uppercase tracking-widest text-white/60 mb-1">\uc0\u3588 \u3632 \u3649 \u3609 \u3609 \u3626 \u3632 \u3626 \u3617 </span>\
-                            <span class="text-5xl font-bold text-[#fcbf49] font-mono drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">$\{team.score.toLocaleString()\}</span>\
-                            <span class="text-sm text-white/80 ml-1">\uc0\u3649 \u3605 \u3657 \u3617 </span>\
-                        </div>\
-\
-                        <div class="space-y-3">\
-                            <div class="grid grid-cols-3 gap-2">\
-                                <button onclick="updateScore($\{team.id\}, 10)" class="bg-white/20 hover:bg-white/30 text-white font-semibold py-2 px-1 rounded-xl text-sm transition active:scale-95">\
-                                    +10\
-                                </button>\
-                                <button onclick="updateScore($\{team.id\}, 50)" class="bg-white/25 hover:bg-white/35 text-white font-semibold py-2 px-1 rounded-xl text-sm transition active:scale-95">\
-                                    +50\
-                                </button>\
-                                <button onclick="updateScore($\{team.id\}, 100)" class="bg-amber-400 hover:bg-amber-300 text-black font-bold py-2 px-1 rounded-xl text-sm transition active:scale-95 shadow-md">\
-                                    +100\
-                                </button>\
-                            </div>\
-                            <div class="grid grid-cols-3 gap-2 opacity-60 hover:opacity-100 transition">\
-                                <button onclick="updateScore($\{team.id\}, -10)" class="bg-black/20 hover:bg-black/30 text-white/90 py-1 px-1 rounded-lg text-xs transition">\
-                                    -10\
-                                </button>\
-                                <button onclick="updateScore($\{team.id\}, -50)" class="bg-black/20 hover:bg-black/30 text-white/90 py-1 px-1 rounded-lg text-xs transition">\
-                                    -50\
-                                </button>\
-                                <button onclick="updateScore($\{team.id\}, -100)" class="bg-red-900/40 hover:bg-red-900/60 text-red-200 py-1 px-1 rounded-lg text-xs transition border border-red-500/20">\
-                                    -100\
-                                </button>\
-                            </div>\
-                        </div>\
-\
-                    </div>\
-                `;\
-                leaderboardEl.innerHTML += cardHTML;\
-            \});\
-        \}\
-\
-        // \uc0\u3648 \u3619 \u3636 \u3656 \u3617 \u3605 \u3657 \u3609 \u3607 \u3635 \u3591 \u3634 \u3609 \u3588 \u3619 \u3633 \u3657 \u3591 \u3649 \u3619 \u3585 \
-        renderLeaderboard();\
-    </script>\
-</body>\
-</html>}
+    <header class="tent-stripes w-full py-8 text-center shadow-xl relative">
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="relative z-10">
+            <h1 class="text-4xl md:text-6xl font-black text-amber-400 tracking-wider">🎪 the 100th Midnight Circus  🎪</h1>
+            <h1 class="text-4xl md:text-6xl font-black text-amber-400 tracking-wider">  curse of the Marionettes  </h1>
+            <p class="text-amber-100 text-sm md:text-base mt-2">100 ปี มหรสพรัตติกาล : อาถรรพ์คำสาปหุ่นเชิดแห่งหกเต็นท์ปริศนา</p>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 mt-8">
+        
+        <div class="flex justify-between items-center mb-6 bg-white/5 p-4 rounded-xl border border-white/10">
+            <div class="text-xs text-emerald-400 flex items-center gap-1">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span> ระบบทำงานปกติ
+            </div>
+            <button onclick="resetScores()" class="bg-red-600 hover:bg-red-700 text-white text-sm font-bold py-2 px-4 rounded-lg transition active:scale-95">
+                🔄 รีเซ็ตคะแนนทั้งหมด
+            </button>
+        </div>
+
+        <div id="leaderboard" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            </div>
+
+    </main>
+
+    <script>
+        // ข้อมูลของทั้ง 6 ทีมละครสัตว์
+        let teams = [
+            { id: 1, name: "Ringmasters", icon: "🎩", score: 0, color: "from-orange-500 to-amber-600" },
+            { id: 2, name: "Acrobats", icon: "🤸🏻", score: 0, color: "from-blue-500 to-indigo-600" },
+            { id: 3, name: "Magicians", icon: "🎭", score: 0, color: "from-pink-500 to-rose-600" },
+            { id: 4, name: "Fire Eaters", icon: "🔥", score: 0, color: "from-purple-600 to-indigo-900" },
+            { id: 5, name: "Jugglers", icon: "🤹🏻", score: 0, color: "from-teal-500 to-emerald-600" },
+            { id: 6, name: "Joker Clowns", icon: "🤡", score: 0, color: "from-yellow-500 to-amber-600" }
+        ];
+
+        const STORAGE_KEY = 'circus_scores_gas_v2';
+
+        // โหลดคะแนนเก่าจากบราวเซอร์เครื่องที่เปิด
+        if (localStorage.getItem(STORAGE_KEY)) {
+            try {
+                let saved = JSON.parse(localStorage.getItem(STORAGE_KEY));
+                teams.forEach(t => { if(saved[t.id] !== undefined) t.score = saved[t.id]; });
+            } catch(e) { console.log(e); }
+        }
+
+        // ฟังก์ชันบวก/ลบคะแนน
+        function updateScore(id, amount) {
+            let team = teams.find(t => t.id === id);
+            if (team) {
+                team.score = Math.max(0, team.score + amount); // ไม่ให้ติดลบ
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(Object.fromEntries(teams.map(t => [t.id, t.score]))));
+                render();
+            }
+        }
+
+        // ฟังก์ชันล้างคะแนนทั้งหมด
+        function resetScores() {
+            if (confirm("คุณแน่ใจใช่ไหมว่าจะรีเซ็ตแต้มทุกทีมให้เป็น 0?")) {
+                teams.forEach(t => t.score = 0);
+                localStorage.removeItem(STORAGE_KEY);
+                render();
+            }
+        }
+
+        // ฟังก์ชันวาดหน้าจอและการจัดอันดับแบบอัตโนมัติ
+        function render() {
+            let board = document.getElementById('leaderboard');
+            board.innerHTML = '';
+
+            // เรียงลำดับคะแนนจากมากไปน้อย
+            let sorted = [...teams].sort((a, b) => b.score - a.score);
+
+            sorted.forEach((team, index) => {
+                let rank = index + 1;
+                let badge = `<span class="bg-black/30 px-2 py-0.5 rounded text-xs">อันดับ ${rank}</span>`;
+                if (rank === 1 && team.score > 0) badge = `<span class="bg-yellow-400 text-black px-2 py-0.5 rounded text-xs font-bold">👑 ที่ 1</span>`;
+
+                board.innerHTML += `
+                    <div class="bg-gradient-to-br ${team.color} p-6 rounded-2xl shadow-lg border border-white/10 relative flex flex-col justify-between">
+                        <div class="absolute top-4 right-4">${badge}</div>
+                        
+                        <div class="flex items-center gap-3 mt-2">
+                            <span class="text-4xl">${team.icon}</span>
+                            <h3 class="text-lg font-bold">${team.name}</h3>
+                        </div>
+
+                        <div class="my-4 bg-black/20 rounded-xl py-3 text-center">
+                            <span class="text-5xl font-black text-amber-300">${team.score}</span>
+                            <span class="text-xs text-white/60 block mt-1">คะแนนสะสม</span>
+                        </div>
+
+                        <div class="space-y-2">
+                            <div class="grid grid-cols-3 gap-1.5">
+                                <button onclick="updateScore(${team.id}, 1)" class="bg-white/20 hover:bg-white/30 text-xs font-bold py-2 rounded-lg">+1</button>
+                                <button onclick="updateScore(${team.id}, 5)" class="bg-white/20 hover:bg-white/30 text-xs font-bold py-2 rounded-lg">+5</button>
+                                <button onclick="updateScore(${team.id}, 10)" class="bg-yellow-400 hover:bg-yellow-300 text-black text-xs font-black py-2 rounded-lg">+10</button>
+                            </div>
+                            <div class="grid grid-cols-3 gap-1.5 opacity-40 hover:opacity-100 transition">
+                                <button onclick="updateScore(${team.id}, -1)" class="bg-black/40 hover:bg-black/60 text-[10px] py-1 rounded-lg">-1</button>
+                                <button onclick="updateScore(${team.id}, -5)" class="bg-black/40 hover:bg-black/60 text-[10px] py-1 rounded-lg">-5</button>
+                                <button onclick="updateScore(${team.id}, -10)" class="bg-red-900/40 hover:bg-red-900/60 text-red-200 text-[10px] py-1 rounded-lg">-10</button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+        }
+// ⏱️ กลไกเช็กข้อมูลใหม่แบบอัจฉริยะ คอยคุยกับเซิร์ฟเวอร์ดึงค่าใหม่ของทุกคนลงบอร์ดทุกๆ 2 วินาที (2000 ms)
+        setInterval(checkRealtimeUpdates, 2000);
+    </script>
+        // สั่งให้วาดหน้าจอครั้งแรก
+        render();
+    </script>
+</body>
+</html>
+  </body>
+</html>
